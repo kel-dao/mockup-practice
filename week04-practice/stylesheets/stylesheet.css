@@ -5,7 +5,7 @@ body {
   margin-left: 2rem;
   margin-right: 2rem;
   max-height: 72rem;
-  max-width: inherit;
+  max-width: 100%;
   
 }
 
@@ -87,29 +87,34 @@ nav ul li a {
   text-align: center;
 }
 
+main {
+  max-width: 100%;
+}
+
 article {
   display: inline-block;
   float: left;
   width: 62%;
-  max-height: 32rem;
+  max-height: 40rem;
   padding: auto;
   margin-top: 1rem;
   margin-right: 1rem;
   overflow: auto;
-  box-sizing: border-box;
 }
 
 aside {
   display: inline-block;
   float: right;
   width: 35%;
-  height: 32rem;
-  padding: 0;
+  max-height: 40rem;
+  padding: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   border: solid;
   border-color: black;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .twitter-linkback {
@@ -165,6 +170,17 @@ footer a {
   color: red;
 }
 
+footer p {
+  padding: 1rem;
+  font-family: arial;
+  font-size: 0.85rem;
+}
+
 footer h5 {
-  float: center;
+  text-align: center;
+  font-family: arial;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
