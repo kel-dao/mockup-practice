@@ -1,0 +1,154 @@
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+  display: block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+html { 
+  font-size: 16px; 
+}
+
+/* only affects anchors in the header, not the body */
+.call-to-action {
+  font-size: 1rem;  
+  color: red;
+  float: right;
+  padding: 0.5rem
+  }
+
+header {
+  background-color: black;
+  color: white;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  width: 100%;
+}
+
+header h1 {
+  vertical-align: bottom;
+  bottom: 0;
+  padding: 0;
+  margin: 0.5rem;
+  float: left;
+  clear: both;
+  font-family: arial;
+  font-weight: 300;
+}
+
+header h3 {
+  vertical-align: bottom;
+  margin: 0.5rem;
+  bottom: 0;
+  float: left;
+  clear: both;
+  padding: 0;
+  font-family: arial;
+  font-size: 1rem;
+  font-weight: 200;
+  color: darkgrey;
+}
+/* affects links within cites within figures 
+
+figure cite a {
+  
+}
+
+but easier to add a class to those links within the HTML code. 
+Look in cats.html for the anchor class tag "twitter-linkback" */
+
+nav {
+  background-color: darkgray;
+  padding: 0rem;
+  align-content: center;
+  font-family: arial;
+  font-size: 16px;
+  margin: 0;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  float: left;
+  width: 20%;
+  align-content: center;
+}
+
+article {
+  float: left;
+  width: 60%;
+  padding: auto;
+}
+
+aside {
+  float: right;
+  width: 40%;
+  padding: auto;
+}
+
+.twitter-linkback {
+  font-weight: bold;
+  background-color: darkslategray;
+  color: white;
+  padding: 0.5rem;  
+}
+
+/* or use border: width style color; */
+figure {
+  border: solid; 
+  border-color: cadetblue;
+  border-width: thick;
+}
+
+figure {
+  padding: 1rem;
+  float: left;
+  overflow: auto;
+}
+
+/* add details about how to change image sizes to float properly */
+figure img {
+  width: 10rem;
+}
+
+/* FOR SHORTHAND!! 
+one rule affects all sides. i.e. padding: 1rem;
+two rules is top & bottom i.e. 2rem 0;
+three rules top, left & right, bottom i.e. 2rem 0 2rem;
+four rules top, right, bottom, left i.e. 2rem 0 2rem 0*/
+
+figure img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: none;
+  margin-right: none;
+}
+
+
+footer {
+  background-color: black;
+  border: none;
+  border-top-color: black;
+  border-top-style: dotted;
+  border-top-width: 0.25rem;
+  clear: both;
+  color: white;
+}
+
+footer a {
+  color: red;
+}
+
+footer h5 {
+  float: center;
+}
