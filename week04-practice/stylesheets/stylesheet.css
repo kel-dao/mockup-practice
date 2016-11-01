@@ -89,70 +89,75 @@ nav ul li a {
 
 main {
   max-width: 100%;
+  display: block;
 }
 
-article {
-  display: inline-block;
+section {
+  box-sizing: border-box;
   float: left;
-  width: 62%;
+  width: 60%;
+  height: 50%;
   max-height: 40rem;
   padding: auto;
   margin-top: 1rem;
   margin-right: 1rem;
+  margin: auto;
   overflow: auto;
+}
+
+section h2 {
+  font-family: arial;
+  font-weight: 300;
+  word-spacing: 4px;
+}
+
+.italic p {
+  font-style: italic;
+}
+
+.italic {
+  clear: left;
+  width: 60%;
+  height: 50%;
 }
 
 aside {
   display: inline-block;
-  float: right;
+  box-sizing: border-box;
   width: 35%;
-  max-height: 40rem;
-  padding: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid;
-  border-color: black;
-  overflow: auto;
-}
-
-.twitter-linkback {
-  font-weight: bold;
-  background-color: darkslategray;
-  color: white;
-  padding: 0.5rem;  
-}
-
-/* or use border: width style color; */
-figure {
-  border: none; 
-  border-color: cadetblue;
-  border-width: thick;
-}
-
-figure {
-  padding: 0.2rem;
-  float: left;
-  overflow: auto;
-}
-
-/* add details about how to change image sizes to float properly */
-figure img {
-  width: 10rem;
-}
-
-/* FOR SHORTHAND!! 
-one rule affects all sides. i.e. padding: 1rem;
-two rules is top & bottom i.e. 2rem 0;
-three rules top, left & right, bottom i.e. 2rem 0 2rem;
-four rules top, right, bottom, left i.e. 2rem 0 2rem 0*/
-
-figure img {
+  height: 80%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  border: solid;
+  border-color: lightgrey;
+  overflow: hidden;
+}
+
+
+figure {
+  margin: 0;
+  padding: 1rem;
+  overflow: auto;
+  text-align: center;
+  width: auto;
+}
+
+.bottom {
+  width: auto;
+}
+
+.top {
+  width: auto;
+}
+
+figure img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: none;
   margin-right: none;
+  width: 10rem;
 }
 
 
@@ -181,6 +186,6 @@ footer h5 {
   font-family: arial;
   font-weight: lighter;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 0rem;
   margin-bottom: 0.5rem;
 }
