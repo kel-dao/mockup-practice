@@ -89,8 +89,7 @@ section {
   display: inline;
   box-sizing: border-box;
   width: 65%;
-  height: 100%;
-  max-height: 40rem;
+  height: 40%;
   padding: 0rem;
   margin-top: 4rem;
   margin-left: 0rem;
@@ -120,7 +119,7 @@ aside {
   max-height: 100%;
   margin: 0;
   padding: 0;
-  height: 68rem;
+  height: 100%;
   background-color: mediumpurple;
   overflow: hidden;
   float: left;
@@ -141,6 +140,7 @@ section figure img {
   float: left;
   vertical-align: top;
   width: 10rem;
+  overflow: auto;
 }
 
 figure img {
@@ -152,16 +152,19 @@ figure img {
   align-content: center;
 }
 
-figure {
-  padding: 1rem;
-  float: left;
-  overflow: auto;
-}
-
 figcaption {
   font-family: arial;
   font-size: 1.25rem;
   text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.italic h2 {
+  text-decoration: none;
+  font-style: normal;
 }
 
 footer {
