@@ -4,6 +4,9 @@ body {
   display: block;
   margin-left: 2rem;
   margin-right: 2rem;
+  max-height: 72rem;
+  max-width: inherit;
+  
 }
 
 html { 
@@ -71,7 +74,7 @@ nav {
   width: 100%;
   overflow: hidden;
   padding-top: 0rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
 }
 
 nav ul {
@@ -81,19 +84,32 @@ nav ul {
 nav ul li a {
   float: left;
   width: 20%;
-  align-content: center;
+  text-align: center;
 }
 
 article {
+  display: inline-block;
   float: left;
-  width: 60%;
+  width: 62%;
+  max-height: 32rem;
   padding: auto;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
 aside {
+  display: inline-block;
   float: right;
-  width: 40%;
-  padding: auto;
+  width: 35%;
+  height: 32rem;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: solid;
+  border-color: black;
+  overflow: hidden;
 }
 
 .twitter-linkback {
@@ -105,13 +121,13 @@ aside {
 
 /* or use border: width style color; */
 figure {
-  border: solid; 
+  border: none; 
   border-color: cadetblue;
   border-width: thick;
 }
 
 figure {
-  padding: 1rem;
+  padding: 0.2rem;
   float: left;
   overflow: auto;
 }
