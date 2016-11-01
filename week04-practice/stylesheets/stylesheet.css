@@ -54,14 +54,6 @@ header h3 {
   font-weight: 200;
   color: darkgrey;
 }
-/* affects links within cites within figures 
-
-figure cite a {
-  
-}
-
-but easier to add a class to those links within the HTML code. 
-Look in cats.html for the anchor class tag "twitter-linkback" */
 
 nav {
   background-color: darkgray;
@@ -98,8 +90,8 @@ section {
   width: 60%;
   height: 50%;
   max-height: 40rem;
-  padding: auto;
-  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: 4rem;
   margin-right: 1rem;
   margin: auto;
   overflow: auto;
@@ -112,13 +104,16 @@ section h2 {
 }
 
 .italic p {
+  font-family: arial;
   font-style: italic;
+  font-weight: thin;
 }
 
 .italic {
   clear: left;
   width: 60%;
   height: 50%;
+  
 }
 
 aside {
@@ -132,16 +127,19 @@ aside {
   padding: 1rem;
   border: solid;
   border-color: lightgrey;
+  box-shadow: 2px 2px lightgray;
   overflow: hidden;
 }
 
 
 figure {
   margin: 0;
-  padding: 1rem;
+  padding: 0rem;
   overflow: auto;
   text-align: center;
   width: auto;
+  font-family: sans-serif;
+  font-size: 0.9rem;
 }
 
 .bottom {
@@ -153,13 +151,30 @@ figure {
 }
 
 figure img {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   margin-left: none;
   margin-right: none;
   width: 10rem;
+  align-content: center;
 }
 
+figcaption {
+  font-family: arial;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+figure a {
+  color: red;
+  float: right;
+}
+
+figure h2 {
+  font-family: arial;
+  font-size: 1.5rem;
+  font-weight: thin;
+}
 
 footer {
   background-color: black;
@@ -184,8 +199,7 @@ footer p {
 footer h5 {
   text-align: center;
   font-family: arial;
-  font-weight: lighter;
-  font-size: 1rem;
-  padding: 0rem;
-  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
 }
