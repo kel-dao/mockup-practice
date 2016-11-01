@@ -4,7 +4,7 @@ body {
   display: block;
   margin-left: 2rem;
   margin-right: 2rem;
-  max-height: 72rem;
+  max-height: 100%;
   max-width: 100%;
 }
 
@@ -88,15 +88,22 @@ main {
 section {
   display: inline;
   box-sizing: border-box;
-  width: 60%;
-  height: 50%;
+  width: 65%;
+  height: 100%;
   max-height: 40rem;
-  padding: 1rem;
+  padding: 0rem;
   margin-top: 4rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
   margin: auto;
-  overflow: auto;
   float: right;
+  overflow: auto;
+}
+
+img {
+  width: 15rem;
+  vertical-align: top;
+  overflow: auto;
+  padding: 1rem;
 }
 
 section h2 {
@@ -107,14 +114,13 @@ section h2 {
 
 
 aside {
-  display: inline-block;
-  vertical-align: top;
-  box-sizing: border-box;
+  display: block;
+  position: relative;
   width: 30%;
-  min-height: 100%;
-  height: 56rem;
+  max-height: 100%;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
+  height: 68rem;
   background-color: mediumpurple;
   overflow: hidden;
   float: left;
@@ -132,17 +138,24 @@ figure {
 
 section figure img {
   margin: 1rem;
-  width: 10rem;
   float: left;
+  vertical-align: top;
+  width: 10rem;
 }
 
 figure img {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: none;
   margin-right: none;
   width: 10rem;
   align-content: center;
+}
+
+figure {
+  padding: 1rem;
+  float: left;
+  overflow: auto;
 }
 
 figcaption {
